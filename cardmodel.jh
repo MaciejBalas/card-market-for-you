@@ -5,7 +5,7 @@ entity Card {
 
 // Use Data Transfert Objects (DTO)
 // dto * with mapstruct
-dto * with Card
+dto * with mapstruct
 // Set service options to all except few
 service all with serviceImpl
 

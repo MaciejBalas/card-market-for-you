@@ -1,0 +1,23 @@
+{
+  "cardMarketForYouApp": {
+    "card": {
+      "home": {
+        "title": "Card",
+        "createLabel": "Dodaj Card",
+        "createOrEditLabel": "Dodaj lub edytuj: Card",
+        "notFound": "No Cards found"
+      },
+      "created": "Utworzono nowy obiekt typu Card z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Card z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Card z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Card {{ id }}?"
+      },
+      "detail": {
+        "title": "Card"
+      },
+      "cardName": "Card Name",
+      "rulesText": "Rules Text"
+    }
+  }
+}

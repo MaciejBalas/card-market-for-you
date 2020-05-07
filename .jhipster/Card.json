@@ -1,0 +1,25 @@
+{
+    "name": "Card",
+    "fields": [
+        {
+            "fieldName": "cardName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rulesText",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200507153800",
+    "entityTableName": "card",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
