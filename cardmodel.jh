@@ -1,0 +1,13 @@
+entity Card {
+	cardName String,
+    rulesText String
+}
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+dto * with Card
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
