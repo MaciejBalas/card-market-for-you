@@ -76,6 +76,9 @@ public class CardServiceImpl implements CardService {
             .map(cardMapper::toDto);
     }
 
+
+
+
     /**
      * Delete the card by id.
      *
@@ -85,5 +88,12 @@ public class CardServiceImpl implements CardService {
     public void delete(Long id) {
         log.debug("Request to delete Card : {}", id);
         cardRepository.deleteById(id);
+    }
+
+    @Override
+    public Optional<CardDTO> findByCardName(String cardName) {
+        log.debug("Request to get Card : {}", cardName);
+        return cardRepository.findByCardName(cardName)
+            .map(cardMapper::toDto);
     }
 }

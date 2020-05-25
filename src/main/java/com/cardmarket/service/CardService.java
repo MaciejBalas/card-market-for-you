@@ -33,10 +33,13 @@ public interface CardService {
      */
     Optional<CardDTO> findOne(Long id);
 
+
     /**
      * Delete the "id" card.
      *
      * @param id the id of the entity.
      */
     void delete(Long id);
+
+    Optional<CardDTO> findByCardName(String cardName);
 }
