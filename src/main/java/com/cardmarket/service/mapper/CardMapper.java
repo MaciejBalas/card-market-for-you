@@ -21,4 +21,13 @@ public interface CardMapper extends EntityMapper<CardDTO, Card> {
         card.setId(id);
         return card;
     }
+    default Card fromName(String name) {            //dopisane
+        if (name == null) {
+            return null;
+        }
+        Card card = new Card();
+        card.setCardName(name);
+        return card;
+    }
+
 }

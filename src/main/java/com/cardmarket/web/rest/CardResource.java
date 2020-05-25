@@ -97,7 +97,16 @@ public class CardResource {
     @GetMapping("/cards/{id}")
     public ResponseEntity<CardDTO> getCard(@PathVariable Long id) {
         log.debug("REST request to get Card : {}", id);
+
         Optional<CardDTO> cardDTO = cardService.findOne(id);
+        return ResponseUtil.wrapOrNotFound(cardDTO);
+    }
+
+
+   @GetMapping("/cards/{name}")
+    public ResponseEntity<CardDTO> getCardByName(@PathVariable String name) {
+        log.debug("REST request to get Card : {}", name);
+        Optional<CardDTO> cardDTO = cardService.findByCardName(name);
         return ResponseUtil.wrapOrNotFound(cardDTO);
     }
 
