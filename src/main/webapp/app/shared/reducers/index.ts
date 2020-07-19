@@ -16,6 +16,7 @@ import passwordReset, { PasswordResetState } from 'app/modules/account/password-
 import card, {
   CardState
 } from 'app/entities/card/card.reducer';
+import cardCollection, { CardCollectionState } from 'app/entities/cardcollection/card-collection.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -31,6 +32,7 @@ export interface IRootState {
   readonly settings: SettingsState;
   readonly card: CardState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
+  readonly cardCollection: CardCollectionState;
   readonly loadingBar: any;
 }
 
@@ -47,6 +49,7 @@ const rootReducer = combineReducers<IRootState>({
   settings,
   card,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
+  cardCollection,
   loadingBar
 });
 
